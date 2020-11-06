@@ -94,6 +94,7 @@ if (USE_SCHANNEL_BACKEND)
 endif ()
 
 if (USE_NSURL_BACKEND)
+	target_link_libraries (https "-framework Foundation")
 	target_link_libraries (https https-nsurl)
 endif ()
 
